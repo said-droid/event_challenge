@@ -3,8 +3,10 @@
 /* Slideshow container */
 .slideshow-container {
     max-width: 100%;
+    max-height: 75%;
     position: relative;
     margin: auto;
+
 }
 
 /* Hide the images by default */
@@ -98,9 +100,9 @@
     font-family: 'Lobster', cursive;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
+.img{
+    width: 100%;
+    height: 75%;
 }
 
 .tab{
@@ -125,5 +127,7 @@ img{
 }
 
 body{
-    background-color: ;
+    background-image: linear-gradient(#C1DBE3, #EF476F, #FFD166);
+
 }
+
