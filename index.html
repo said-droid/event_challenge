@@ -5,33 +5,31 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Recursive:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Dwayne & said's event</title>
 </head>
 <body>
 <div class="Title">
-    <h1>Face Mask</h1>
+    <h1>The Mask Event</h1>
 </div>
 <!-- Slideshow container -->
 <div class="slideshow-container">
 
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
         <img src="img/faceMask1.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
+        <div class="text">Ballroom Event</div>
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="img2.jpg" style="width:100%">
-        <div class="text">Caption Two</div>
+        <img src="img/faceMask2.jpg" style="width:100%">
+        <div class="text">Clown Event</div>
     </div>
 
     <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="img3.jpg" style="width:100%">
-        <div class="text">Caption Three</div>
+        <img src="img/faceMask4.jpg" style="width:100%">
+        <div class="text">Masqurade Event</div>
     </div>
 
     <!-- Next and previous buttons -->
@@ -40,13 +38,51 @@
 </div>
 <br>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
+<!-- Tab links -->
+<div class="tab">
+    <button class="tablinks tab-summary" onclick="openTabs(event, 'Summary')" id="defaultOpen">summary</button>
+    <button class="tablinks tab-info" onclick="openTabs(event, 'info')">practical info</button>
+    <button class="tablinks tab-contact" onclick="openTabs(event, 'Contact')">contact form</button>
 </div>
-// link js file
+
+<!-- Tab content -->
+<div id="Summary" class="tabcontent">
+    <h3>Summary</h3>
+    <p>The Mask Event comprises of three(3) different party hall under one roof whereby each individual has the right to
+        choose where he or she wants to enjoy with the requirement of mask for entry. </p>
+</div>
+
+<div id="info" class="tabcontent">
+    <h3>The Practical info</h3>
+    <p> The event will take place at Sportspalise(Merksem) on 13/08/2020 at 8pm.<br>
+        Dont forget the mask is required to grant your entry.<br>
+        For reservation, send us a mail at mask@event.gmail.org
+    </p>
+
+
+</div>
+
+
+<div id="Contact-Form" class="tabcontent">
+    <div class="container">
+        <form>
+
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="your e-mail...">
+
+            <label for="subject">Message</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+</div>
+
 <script src="app.js"></script>
 </body>
 </html>

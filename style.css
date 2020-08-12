@@ -2,7 +2,7 @@
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 100%;
     position: relative;
     margin: auto;
 }
@@ -91,4 +91,14 @@
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+.Title{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+img{
+    max-height: 50%;
+    width: 100%;
 }
