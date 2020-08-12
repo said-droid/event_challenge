@@ -3,7 +3,6 @@
 /* Slideshow container */
 .slideshow-container {
     max-width: 100%;
-    max-height: 75%;
     position: relative;
     margin: auto;
 
@@ -11,7 +10,7 @@
 
 /* Hide the images by default */
 .mySlides {
-    display-inside: ruby;
+    display: none;
 }
 
 /* Next & previous buttons */
@@ -164,4 +163,9 @@ input[type=submit] {
 
 #info {
     text-align: center;
+}
+
+.tablinks {
+    height: 50px;
+
 }
